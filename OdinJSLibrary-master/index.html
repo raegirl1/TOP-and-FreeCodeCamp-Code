@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Library Project</title>
+        <link rel="stylesheet" href="Assets/style.css">
+        <link rel="stylesheet" href="Assets/royale.css"> 
+    </head>
+    <body>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+        <script src="./Assets/init-database.js"></script>
+            <!--  Add SDKs for Firebase products that you want to use
+                https://firebase.google.com/docs/web/setup#available-libraries -->
+                <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+
+
+        <!--Royale Header-->
+        <div class="royale_header">
+            <img src="./Assets/CircleLogo.png" width="60px" height="60px"><span> Royale by xCoderSai</span>
+        </div>
+        <!---->
+        <div class="main-wrapper">
+            <div class="image-wrapper">
+                <div class="input-fields">
+                <form>
+                    <input type="text" class="input-text-field" id="book-title" name="book-title" placeholder="Book Title">
+                    <input type="text" class="input-text-field" id="book-author" name="book-author" placeholder="Author">
+                    <input type="text" class="input-text-field" id="book-pages" name="book-pages" placeholder="Number of pages">
+                    <input type="radio" id="read" name="status" value="Read">
+                    <label for="read">Read</label>
+                    <input type="radio" id="not-read" name="status" value="Not Read" checked>
+                    <label for="not-read">Not Read</label>
+                    <div class="button-div"><input id="AddBook" type="button" value="Add Book"></div>
+                    
+                    </form>
+                </div>
+            </div>
+            <div class="book-wrapper">
+                <table id="book-table">
+                    <tbody>
+                    <tr id="header-book-table">
+                        <th>Ttile</th>
+                        <th>Author</th>
+                        <th>Pages</th>
+                        <th>Status</th>
+                        <th>Change<br>Status</th>
+                        <th>Remove<br>Book</th>
+                    </tr>
+                    </tbody>
+                    <tbody id="book-tbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+
+        <script src="Assets/logic.js"></script>
+    </body>
+</htmlZ>

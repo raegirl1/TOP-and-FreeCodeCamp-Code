@@ -1,0 +1,102 @@
+html {
+	height: 100%;
+}
+body {
+	background-color: #fff;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+.image-wrapper {
+	margin-top: 10rem;
+	background-image: url("./Library_img.jpg");
+	background-repeat: repeat;
+	background-position: center;
+	min-height: 25rem;
+	justify-content: center;
+	display: flex;
+}
+.input-text-field {
+	padding: 0.7em 1em;
+	margin: 1em;
+	border-radius: 0.4em;
+}
+
+.button-div {
+	margin: 0 auto;
+	width: max-content;
+	height: max-content;
+	justify-content: center;
+	margin-top: 0.95em;
+}
+.button-div input {
+	padding: 0.5em 1em;
+}
+
+.input-fields {
+	margin-top: 12em;
+	height: max-content;
+	display: flex;
+	justify-content: center;
+}
+
+.input-fields label {
+	color: burlywood;
+	font-weight: bold;
+}
+
+.book-wrapper {
+	margin: 0 auto;
+	margin-top: 5rem;
+	padding-left: 3em;
+	padding-right: 3em;
+	width: max-content;
+}
+
+#book-table {
+	border-collapse: collapse;
+	font-size: 1.2em;
+}
+th {
+	border: 3px solid rgb(165, 101, 42);
+
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	font-weight: 300;
+}
+td {
+	border: 3px solid rgb(165, 101, 42);
+
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	font-weight: 300;
+}
+#header-book-table {
+	background-color: rgba(222, 184, 135, 0.5);
+}
+
+.switch-button {
+	color: green;
+}
+.delete-button {
+	color: red;
+}
+
+::-webkit-input-placeholder {
+	/* Edge */
+	text-align: center;
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	text-align: center;
+}
+
+::placeholder {
+	text-align: center;
+}
